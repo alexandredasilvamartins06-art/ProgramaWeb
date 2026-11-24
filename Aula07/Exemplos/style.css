@@ -1,0 +1,85 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background-color: #f4f7fa;
+    color: #1b2a4a;
+    font-family: Calibri, sans-serif;
+    font-size: 19px;
+}
+
+h1,h2,h3 {
+    font-family: Cambria, serif;
+
+}
+
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px;
+    background-color: #350868;
+    color: white;
+}
+
+.promoção {
+    margin: 0;
+    padding: 20px;
+    color: rgb(24, 37, 219);
+    text-align: center;
+}
+
+.sobre {
+    min-width: 200px;
+    padding: 20px;
+    background-color: white;
+    border: 1px solid #ccc;
+    text-align: left;
+}
+
+.contato {
+    min-width: 200px;
+    padding: 20px;
+    background-color: white;
+    border: 1px solid #ccc;
+    text-align: left;
+}
+
+header h1 {
+    margin: 0;
+}
+
+nav a {
+    color: #f2a541;
+    margin-left: 16px;
+    text-decoration: none;
+}
+
+main {
+    padding: 20px;
+}
+
+.produtos {
+    display: flex;
+    gap: 20px; /* espaço entre os cards */
+    flex-wrap: wrap; /* quebra de linhas no celular */
+}
+
+.card {
+    flex: 1;
+    min-width: 200px;
+    padding: 20px;
+    background-color: white;
+    border: 1px solid #ccc;
+    text-align: center;
+}
+
+footer {
+    text-align: center;
+    padding: 20px;
+    background-color: #6361e4;
+    color: #ffffff;
+}

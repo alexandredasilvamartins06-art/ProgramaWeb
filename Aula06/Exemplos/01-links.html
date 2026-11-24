@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"> 
+    <link rel="stylesheet" href="./01-style.css">
+    <title>Document</title>
+</head>
+<body>
+    <h1><strong>Página: Hiperlinks e Âncoras</strong></h1>
+    <a href="../index.html">Voltar</a>
+
+      <h2>1. Hiperlinks</h2>
+
+    <aside>
+        <strong>Analogia:</strong> um link é uma <strong>porta</strong>
+        que leva a outro lugar. Pode ser uma porta para outro cômodo
+        da sua casa (outra página do seu site) ou para a casa do
+        vizinho (outro site).
+    </aside>
+
+    <h2>O que é?</h2>
+
+    <p>
+        O link usa a tag <code>&lt;a&gt;</code> (de <em>anchor</em>,
+        âncora). Ela precisa de um <strong>atributo</strong>:
+        uma informação extra escrita dentro da tag de abertura.
+        O atributo do link é o <code>href</code>, que diz
+        <strong>para onde a porta leva</strong>.
+    </p>
+
+    <h3>Exemplos:</h3>
+
+    <pre>
+&lt;!-- Link para outro site --&gt;
+&lt;a href="https://www.senai.br"&gt;Site do SENAI&lt;/a&gt;
+
+&lt;!-- Link para outra página do seu site --&gt;
+&lt;a href="contato.html"&gt;Fale conosco&lt;/a&gt;
+
+&lt;!-- Abrir em nova aba --&gt;
+&lt;a href="https://www.google.com" target="_blank"&gt;Abrir o Google&lt;/a&gt;
+
+&lt;!-- Link de e-mail --&gt;
+&lt;a href="mailto:contato@email.com"&gt;Mande um e-mail&lt;/a&gt;
+    </pre>
+
+    <ul>
+        <li><strong>Link externo:</strong> endereço completo, começando com https://.</li>
+        <li><strong>Link interno:</strong> só o nome do arquivo, se estiver na mesma pasta.</li>
+        <li><strong>target="_blank":</strong> abre o link em uma nova aba.</li>
+    </ul>
+
+    <h2>Micro-passos</h2>
+
+    <ol>
+        <li>Crie o arquivo contato.html com um &lt;h1&gt;Contato&lt;/h1&gt;.</li>
+        <li>No index.html, crie um link para contato.html.</li>
+        <li>No contato.html, crie um link de volta para index.html.</li>
+        <li>Clique nos dois e passeie entre as páginas!</li>
+    </ol>
+
+    <h2>Pequena vitória</h2>
+
+    <p>
+        Seu site agora tem mais de uma página ligada entre si.
+        Isso é navegação de verdade!
+    </p>
+
+    <h2>Errou? Faz parte!</h2>
+
+    <ul>
+        <li>Clicou e apareceu "Arquivo não encontrado"? Confira se o nome no href está exatamente igual ao do arquivo, com minúsculas e extensão .html.</li>
+        <li>O link externo não abriu? Faltou o https:// no começo.</li>
+    </ul>
+
+    <h2>Links para dentro da mesma página</h2>
+
+    <p>
+        Um link pode levar a uma parte da própria página,
+        como um elevador que vai direto ao andar certo.
+        Basta dar um id ao destino e usar # no href:
+    </p>
+
+    <pre>
+&lt;a href="#contato"&gt;Ir para o contato&lt;/a&gt;
+
+...
+
+&lt;section id="contato"&gt;
+    ...
+&lt;/section&gt;
+    </pre>
+
+    <h2>Exercícios</h2>
+
+    <ol>
+        <li>Crie um pequeno menu com links para index.html, sobre.html e contato.html.</li>
+        <li>Coloque um link para um site externo que abra em nova aba.</li>
+        <li>No fim de uma página longa, crie um link "Voltar ao topo" usando #.</li>
+    </ol>
+
+    <h2>Pergunta para fixar</h2>
+
+    <p>Qual atributo diz para onde o link leva?</p>
+
+    <details>
+        <summary>Ver resposta</summary>
+        <p>O <code>href</code>.</p>
+    </details>
+
+</body>
+</html>
